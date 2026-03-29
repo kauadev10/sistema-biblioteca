@@ -22,6 +22,11 @@ public class Emprestimo {
         this.multa = null;
     }
 
+    //getter
+    public Pessoa getUsuario(){
+        return this.usuario;
+    }
+
     public void adicionarItem(ItemAcervo item) {
         this.itens.add(item);
     }
