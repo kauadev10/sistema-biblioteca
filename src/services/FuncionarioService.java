@@ -14,7 +14,7 @@ public class FuncionarioService {
 
     // Ação 1: Cadastrar Aluno
     public void cadastrarAluno(Aluno aluno) {
-        // Aqui ficam as regras! Exemplo: O CPF não pode ser vazio.
+        // regras
         if(aluno.getCpf().isEmpty()) {
             System.out.println("Erro: O aluno precisa ter um CPF!");
             return; // Para o processo aqui.
