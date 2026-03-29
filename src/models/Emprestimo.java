@@ -1,29 +1,32 @@
 package models;
-import java.util.List;
 import java.util.Date;
+import java.util.List;
 import java.util.ArrayList;
 
 public class Emprestimo {
     private int id;
+    private Date dataRetirada;
+    private Date dataDevolucaoPrevista;
+
     private Pessoa usuario;
     private List<ItemAcervo> itens;
-    private Date dataRetirada;
+    private Multa multa;
 
-    public Emprestimo(int id, Pessoa usuario) {
+    // Construtor
+    public Emprestimo(int id, Pessoa usuario, Date dataDevolucaoPrevista) {
         this.id = id;
         this.usuario = usuario;
-        this.itens = new ArrayList<>();
         this.dataRetirada = new Date();
+        this.dataDevolucaoPrevista = dataDevolucaoPrevista;
+        this.itens = new ArrayList<>();
+        this.multa = null;
     }
 
-    //GETTERS E SETTERS
-
-    public Pessoa getUsuario() {
-        return usuario;
-    }
-
-    //metodo para aicionar coisas na sacola
     public void adicionarItem(ItemAcervo item) {
         this.itens.add(item);
+    }
+
+    public void setMulta(Multa multa) {
+        this.multa = multa;
     }
 }
