@@ -1,26 +1,8 @@
 package models;
 
-public class Funcionario extends Pessoa{
+public class Funcionario extends Pessoa {
 
-    //METODOS
-    public void CadastraUsuario(){
-        System.out.println("Castrando usuario!");
-    }
-
-    public void CadastraFuncionario(){
-        System.out.println("Castrando Funcionario!");
-    }
-
-    public void CadastraProfessores(){
-        System.out.println("Castrando Professores!");
-    }
-
-    public void CadastraLivro(){
-        System.out.println("Castrando Livros!");
-    }
-
-    public void GerarRelatorio(){
-        System.out.println("Gerando relatorio!");
+    public Funcionario(int id, String cpf, String nome, int telefone, String email) {
+        super(id, cpf, nome, telefone, email);
     }
 }
-
