@@ -22,4 +22,9 @@ public class BancoDeDados {
     public List<ItemAcervo> getAcervo() {
         return acervoCadastrado;
     }
+
+    // Como olhar a lista de pessoas cadastradas
+    public List<Pessoa> getPessoas() {
+        return pessoasCadastradas;
+    }
 }
